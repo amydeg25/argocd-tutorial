@@ -11,7 +11,7 @@ spec:
     helm:
       releaseName: application-from-helm-amy # Here we change the release name of the Chart!
       valueFiles:
-        - custom-values.yaml
+        - values.yaml
       # Precedence Order: parameters > Custom Values/valueFiles > values.yaml(Helm Repo)!!
       # parameters: 
       #   - name: "replicaCount"
