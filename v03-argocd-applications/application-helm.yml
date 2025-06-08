@@ -1,17 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application-from-scratch
+  name: application-from-scratch # Here release name of app will change!
 spec:
   destination:
     namespace: default
     server: https://kubernetes.default.svc
   project: default
   source:
-  # It's possible to override helm values through different ways such as "valueFiles", "values", "valuesObject" and "parameters". 
-  # Values injections have the following order of precedence parameters > valuesObject > values > valueFiles > helm repository values.yaml Or rather
-          #   helm:
-          #      releaseName: application-from-helm
+    helm:
+      releaseName: application-from-helm-amy # Here we change the release name of the Chart!
           #      valueFiles:
           #        - custom-values.yaml
           #      values: |
