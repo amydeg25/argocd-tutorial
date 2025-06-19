@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amy-app-rocks
+  name: amy-app-rocks # Release name of helm/application!!
 spec:
   destination:
     namespace: default
@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     helm:
-      releaseName: application-from-helm-amy # Here we change the release name of the Chart!
+      releaseName: application-from-helm-amy # Helm Chart Release Name !!
       # valueFiles:
       #   - custom-values.yaml
       # Precedence Order: parameters > Custom Values/valueFiles > values.yaml(Helm Repo)!!
