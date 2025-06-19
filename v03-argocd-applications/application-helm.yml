@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amy-application # Here release name of app will change!
+  name: amy-app # Here release name of app will change!
 spec:
   destination:
     namespace: default
