@@ -13,9 +13,9 @@ spec:
       # valueFiles:
       #   - custom-values.yaml
       # Precedence Order: parameters > Custom Values/valueFiles > values.yaml(Helm Repo)!!
-      # parameters: 
-      #   - name: "replicaCount"
-      #     value: "2"
+      parameters: 
+        - name: "replicaCount"
+          value: "2"
           #      valueFiles:
           #        - custom-values.yaml
           #      values: |
