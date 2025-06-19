@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: amy-app-test 
+  name: amy-app-demo 
 spec:
   destination:
     namespace: default
