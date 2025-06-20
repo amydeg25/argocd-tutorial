@@ -1,8 +1,9 @@
 terraform {
   required_providers {
     argocd = {
-      source  = "oboukili/argocd"
-      version = "6.0.2"
+      source = "argoproj-labs/argocd"
+      # https://registry.terraform.io/providers/argoproj-labs/argocd/latest/docs#example-usage
+      version = "7.8.2"
     }
   }
 }
@@ -13,3 +14,5 @@ provider "argocd" {
   password    = var.password
   insecure    = var.insecure
 }
+
+# https://argocd-server.local/
